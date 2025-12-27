@@ -21,7 +21,7 @@ export default function BillCalculator() {
     setResult(null);
 
     try {
-      const res = await fetch("http://localhost:5000/api/bill/calculate", {
+      const res = await fetch("https://electricity-bill-calculator-fshn.onrender.com/api/bill/calculate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
